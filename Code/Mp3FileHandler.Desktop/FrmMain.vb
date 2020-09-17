@@ -419,7 +419,7 @@ Public Class FrmMain
 
             If processed <> 0 Then tsLabel.Text += $"({row.Index}) como {processed} processados / "
 
-            dados.extensao = playlistExtension
+            dados.Extensao = playlistExtension
 
             mng.ProcessPlaylist(txtCaminho.Text.Substring(0, 1) + playlistPath, dados)
 
@@ -458,7 +458,7 @@ Public Class FrmMain
 
         End If
 
-        dados.extensao = playlistExtension
+        dados.Extensao = playlistExtension
         mng.ProcessPlaylist(txtCaminho.Text.Substring(0, 1) + playlistPath, dados)
 
         pnMain.Enabled = True
@@ -470,12 +470,12 @@ Public Class FrmMain
 
         Dim dados As New Mp3FileInfo()
 
-        dados.abreviar = chkAbreviar.Checked.ToString()
-        dados.caminho = txtCaminho.Text
-        dados.extensao = txtExtensao.Text
-        dados.prefixo = txtPrefixo.Text
-        dados.substituir = txtSubstituir.Text
-        dados.substpor = txtSubstPor.Text
+        dados.Abreviar = chkAbreviar.Checked.ToString()
+        dados.Caminho = txtCaminho.Text
+        dados.Extensao = txtExtensao.Text
+        dados.Prefixo = txtPrefixo.Text
+        dados.Substituir = txtSubstituir.Text
+        dados.Substpor = txtSubstPor.Text
 
         Return dados
 
@@ -485,12 +485,12 @@ Public Class FrmMain
 
         Dim dados As New Mp3FileInfo()
 
-        dados.abreviar = row.Cells(5).Value
-        dados.caminho = row.Cells(0).Value.ToString()
-        dados.extensao = row.Cells(1).Value.ToString()
-        dados.prefixo = row.Cells(2).Value.ToString()
-        dados.substituir = row.Cells(3).Value.ToString()
-        dados.substpor = row.Cells(4).Value.ToString()
+        dados.Abreviar = row.Cells(5).Value
+        dados.Caminho = row.Cells(0).Value.ToString()
+        dados.Extensao = row.Cells(1).Value.ToString()
+        dados.Prefixo = row.Cells(2).Value.ToString()
+        dados.Substituir = row.Cells(3).Value.ToString()
+        dados.Substpor = row.Cells(4).Value.ToString()
 
         Return dados
 
@@ -519,9 +519,9 @@ Public Class FrmMain
 
     Private Sub MontarGrid()
 
-        DataGridView1.DataSource = mng.listCommand
+        DataGridView1.DataSource = mng.ListCommand
 
-        If mng.listCommand Is Nothing Then
+        If mng.ListCommand Is Nothing Then
             Return
         End If
 
@@ -616,7 +616,7 @@ Public Class FrmMain
 
             mng.Delete(e.RowIndex)
 
-            If mng.listCommand Is Nothing Then
+            If mng.ListCommand Is Nothing Then
                 Return
             End If
             MontarGrid()

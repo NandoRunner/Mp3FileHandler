@@ -10,15 +10,15 @@ namespace Mp3FileHandler.BusinessRules
 {
     public class FileRenamerManager
     {
-        private string _json;
+        private readonly string _json;
 
-        public List<Mp3FileInfo> listCommand { get; set; }
+        public List<Mp3FileInfo> ListCommand { get; set; }
 
         public FileRenamerManager(string json)
         {
             _json = json;
 
-            listCommand = new List<Mp3FileInfo>();
+            ListCommand = new List<Mp3FileInfo>();
 
             if (!FS.FileExists(json))
             {
@@ -26,22 +26,22 @@ namespace Mp3FileHandler.BusinessRules
             }
             else
             { 
-                listCommand = LoadCommands();
+                ListCommand = LoadCommands();
             }
         }
 
-        private void process(ref string destFile, Mp3FileInfo dados, ref bool mover)
+        private void Process(ref string destFile, Mp3FileInfo dados, ref bool mover)
         {
-            if (!string.IsNullOrEmpty(dados.substpor))
+            if (!string.IsNullOrEmpty(dados.Substpor))
             {
-                if (destFile.Contains(dados.substituir))
+                if (destFile.Contains(dados.Substituir))
                 {
-                    destFile = destFile.Replace(dados.substituir, dados.substpor);
+                    destFile = destFile.Replace(dados.Substituir, dados.Substpor);
                     mover = true;
                 }
             }
 
-            if (Convert.ToBoolean(dados.abreviar) && destFile.Contains(";"))
+            if (Convert.ToBoolean(dados.Abreviar) && destFile.Contains(";"))
             {
                 var aux = destFile.Split('-');
                 var aux2 = aux[0].Split(';');
@@ -49,9 +49,9 @@ namespace Mp3FileHandler.BusinessRules
                 mover = true;
             }
 
-            if (!string.IsNullOrEmpty(dados.prefixo))
+            if (!string.IsNullOrEmpty(dados.Prefixo))
             {
-                destFile = dados.prefixo + " " + destFile.Trim();
+                destFile = dados.Prefixo + " " + destFile.Trim();
                 mover = true;
             }
         }
@@ -59,8 +59,8 @@ namespace Mp3FileHandler.BusinessRules
         public int ProcessFile(Mp3FileInfo dados)
         {
           
-            var myDirectory = new DirectoryInfo(dados.caminho);
-            FileInfo[] myFiles = myDirectory.GetFiles(dados.extensao, SearchOption.AllDirectories);
+            var myDirectory = new DirectoryInfo(dados.Caminho);
+            FileInfo[] myFiles = myDirectory.GetFiles(dados.Extensao, SearchOption.AllDirectories);
 
             var processed = 0;
 
@@ -73,7 +73,7 @@ namespace Mp3FileHandler.BusinessRules
                 mover = false;
                 destFile = oriFile.Name;
 
-                this.process(ref destFile, dados, ref mover);
+                this.Process(ref destFile, dados, ref mover);
 
                 if (mover)
                 {
@@ -91,7 +91,7 @@ namespace Mp3FileHandler.BusinessRules
         public void ProcessPlaylist(string caminho, Mp3FileInfo dados)
         {
             var myDirectory = new DirectoryInfo(caminho);
-            FileInfo[] myFiles = myDirectory.GetFiles(dados.extensao);
+            FileInfo[] myFiles = myDirectory.GetFiles(dados.Extensao);
             bool mover = false;
 
             foreach (var oriFile in myFiles)
@@ -106,9 +106,9 @@ namespace Mp3FileHandler.BusinessRules
                     while (null != (line = input.ReadLine()))
                     {
 
-                        if (!line.Contains(dados.caminho.Substring(2)))
+                        if (!line.Contains(dados.Caminho.Substring(2)))
                             continue;
-                        this.process(ref line, dados, ref mover);
+                        this.Process(ref line, dados, ref mover);
                         output.WriteLine(line);
                     }
                 }
@@ -126,9 +126,9 @@ namespace Mp3FileHandler.BusinessRules
 
         public void SaveCommand(Mp3FileInfo request)
         {
-            listCommand.Add(request);
-            FS.SaveJson<Mp3FileInfo>(listCommand, _json);
-            listCommand = LoadCommands();
+            ListCommand.Add(request);
+            FS.SaveJson<Mp3FileInfo>(ListCommand, _json);
+            ListCommand = LoadCommands();
         }
 
         public List<Mp3FileInfo> LoadCommands()
@@ -138,8 +138,8 @@ namespace Mp3FileHandler.BusinessRules
 
         public void Delete(int rowIndex)
         {
-           listCommand.RemoveAt(rowIndex);
-           FS.SaveJson<Mp3FileInfo>(listCommand, _json);
+           ListCommand.RemoveAt(rowIndex);
+           FS.SaveJson<Mp3FileInfo>(ListCommand, _json);
         }
 
     }
