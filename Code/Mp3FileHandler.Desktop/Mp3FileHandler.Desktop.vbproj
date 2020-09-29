@@ -89,8 +89,11 @@
     <Reference Include="FAndradeTI.Util, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\FAndradeTI.Util.1.0.3\lib\net472\FAndradeTI.Util.dll</HintPath>
     </Reference>
-    <Reference Include="FAndradeTI.Util.FileSystem, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FAndradeTI.Util.FileSystem.1.0.12\lib\net472\FAndradeTI.Util.FileSystem.dll</HintPath>
+    <Reference Include="FAndradeTI.Util.FileSystem, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FAndradeTI.Util.FileSystem.1.0.14\lib\net472\FAndradeTI.Util.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="FAndradeTI.Util.WinForms, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FAndradeTI.Util.WinForms.1.0.3\lib\net472\FAndradeTI.Util.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

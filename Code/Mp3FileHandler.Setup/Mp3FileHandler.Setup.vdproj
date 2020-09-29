@@ -15,42 +15,24 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_06006E116D751476E6261FC3F575CFB4"
-        "OwnerKey" = "8:_C1B7B42A01B2140D089E46E27D2B0688"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_06006E116D751476E6261FC3F575CFB4"
+        "MsmKey" = "8:_0C7E2A0FD7EF7A3F75159265CF201EDD"
         "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_246D73F03A30D80CFA32C2B0540E52CF"
+        "MsmKey" = "8:_23E9C5C25F5B289AC3223048812D9462"
         "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4B38B65F4F8042B39D107FA52B9CBC86"
+        "MsmKey" = "8:_359A125EC07E4D39B468FD1EE0901B55"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4D69A15388C04D579574D50728001C43"
-        "OwnerKey" = "8:_C1B7B42A01B2140D089E46E27D2B0688"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4D69A15388C04D579574D50728001C43"
-        "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_727645381A433FB34B35F73D7B0777E7"
         "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
         "MsmSig" = "8:_UNDEFINED"
@@ -58,7 +40,13 @@
         "Entry"
         {
         "MsmKey" = "8:_727645381A433FB34B35F73D7B0777E7"
-        "OwnerKey" = "8:_06006E116D751476E6261FC3F575CFB4"
+        "OwnerKey" = "8:_0C7E2A0FD7EF7A3F75159265CF201EDD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_727645381A433FB34B35F73D7B0777E7"
+        "OwnerKey" = "8:_D11C90E5D7D9B409C808B49E46BDEF2F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -69,7 +57,31 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C1B7B42A01B2140D089E46E27D2B0688"
+        "MsmKey" = "8:_D11C90E5D7D9B409C808B49E46BDEF2F"
+        "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D11C90E5D7D9B409C808B49E46BDEF2F"
+        "OwnerKey" = "8:_E54167813209E8003C2DC6C94CF2E581"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E32B8571F173DFCE0C9C5B0CEB0B1C46"
+        "OwnerKey" = "8:_E54167813209E8003C2DC6C94CF2E581"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E32B8571F173DFCE0C9C5B0CEB0B1C46"
+        "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E54167813209E8003C2DC6C94CF2E581"
         "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -88,25 +100,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_246D73F03A30D80CFA32C2B0540E52CF"
+        "OwnerKey" = "8:_0C7E2A0FD7EF7A3F75159265CF201EDD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C1B7B42A01B2140D089E46E27D2B0688"
+        "OwnerKey" = "8:_23E9C5C25F5B289AC3223048812D9462"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_06006E116D751476E6261FC3F575CFB4"
+        "OwnerKey" = "8:_E54167813209E8003C2DC6C94CF2E581"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4D69A15388C04D579574D50728001C43"
+        "OwnerKey" = "8:_E32B8571F173DFCE0C9C5B0CEB0B1C46"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D11C90E5D7D9B409C808B49E46BDEF2F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -216,14 +234,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_06006E116D751476E6261FC3F575CFB4"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0C7E2A0FD7EF7A3F75159265CF201EDD"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.FileSystem, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.FileSystem, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_06006E116D751476E6261FC3F575CFB4"
+                    "_0C7E2A0FD7EF7A3F75159265CF201EDD"
                     {
                     "Name" = "8:FAndradeTI.Util.FileSystem.dll"
                     "Attributes" = "3:512"
@@ -247,14 +265,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_246D73F03A30D80CFA32C2B0540E52CF"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_23E9C5C25F5B289AC3223048812D9462"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:FAndradeTI.Util, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_246D73F03A30D80CFA32C2B0540E52CF"
+                    "_23E9C5C25F5B289AC3223048812D9462"
                     {
                     "Name" = "8:FAndradeTI.Util.dll"
                     "Attributes" = "3:512"
@@ -278,9 +296,9 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B38B65F4F8042B39D107FA52B9CBC86"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_359A125EC07E4D39B468FD1EE0901B55"
             {
-            "SourcePath" = "8:..\\..\\..\\ProjectResource\\images\\fandradeti.ico"
+            "SourcePath" = "8:..\\..\\..\\.Resources\\PublicResources\\images\\fandradeti.ico"
             "TargetName" = "8:fandradeti.ico"
             "Tag" = "8:"
             "Folder" = "8:_0DC2751421FA4F0494443D82F5F22CD2"
@@ -296,37 +314,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D69A15388C04D579574D50728001C43"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:UltraID3Lib, Version=0.9.5.4, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_4D69A15388C04D579574D50728001C43"
-                    {
-                    "Name" = "8:UltraID3Lib.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:UltraID3Lib.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_0DC2751421FA4F0494443D82F5F22CD2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_727645381A433FB34B35F73D7B0777E7"
@@ -391,14 +378,76 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C1B7B42A01B2140D089E46E27D2B0688"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D11C90E5D7D9B409C808B49E46BDEF2F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Mp3FileHandler.BusinessRules, Version=1.20.20.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.FileSystem, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C1B7B42A01B2140D089E46E27D2B0688"
+                    "_D11C90E5D7D9B409C808B49E46BDEF2F"
+                    {
+                    "Name" = "8:FAndradeTI.Util.FileSystem.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FAndradeTI.Util.FileSystem.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0DC2751421FA4F0494443D82F5F22CD2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E32B8571F173DFCE0C9C5B0CEB0B1C46"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:UltraID3Lib, Version=0.9.5.4, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E32B8571F173DFCE0C9C5B0CEB0B1C46"
+                    {
+                    "Name" = "8:UltraID3Lib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:UltraID3Lib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0DC2751421FA4F0494443D82F5F22CD2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E54167813209E8003C2DC6C94CF2E581"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Mp3FileHandler.BusinessRules, Version=1.20.22.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E54167813209E8003C2DC6C94CF2E581"
                     {
                     "Name" = "8:Mp3FileHandler.BusinessRules.dll"
                     "Attributes" = "3:512"
@@ -499,16 +548,16 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FAndradeTI Mp3 File Handler"
-        "ProductCode" = "8:{1E99A3E2-0545-4D8F-A104-30A8660125A1}"
-        "PackageCode" = "8:{00EEC550-4438-4A23-80F3-2D2DE5B5779E}"
+        "ProductName" = "8:NandoRunner Mp3 File Handler"
+        "ProductCode" = "8:{4F96FB9A-F296-4766-9626-5F7F1646EB18}"
+        "PackageCode" = "8:{26C67764-F4FA-4870-8A20-BEA69B64E0C7}"
         "UpgradeCode" = "8:{72EC32E2-2BDA-4D99-831E-A83760DC4D09}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.20.21"
+        "ProductVersion" = "8:1.20.23"
         "Manufacturer" = "8:FAndradeTI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -518,7 +567,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Mp3 File Handler"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_4B38B65F4F8042B39D107FA52B9CBC86"
+        "ARPPRODUCTICON" = "8:_359A125EC07E4D39B468FD1EE0901B55"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"

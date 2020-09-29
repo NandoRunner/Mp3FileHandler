@@ -1,5 +1,6 @@
 Imports FAndradeTI.Util
 Imports FAndradeTI.Util.FileSystem
+Imports FAndradeTI.Util.WinForms
 Imports Mp3FileHandler.BusinessRules
 Imports Mp3FileHandler.BusinessRules.Model
 
@@ -359,7 +360,7 @@ Public Class FrmMain
 
     Private Sub frmFileRename_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Me.Text = Application.ProductName & " - " & Application.CompanyName & "          Version: " + Application.ProductVersion
+        Me.Text = AppInfo.GetFullTitle()
 
         tsLabel.Text = ""
 
