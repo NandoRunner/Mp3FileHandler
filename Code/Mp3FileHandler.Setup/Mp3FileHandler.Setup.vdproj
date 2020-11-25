@@ -57,6 +57,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C4B90BA4A280C467EF9D7EB2F9419BE6"
+        "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D11C90E5D7D9B409C808B49E46BDEF2F"
         "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
         "MsmSig" = "8:_UNDEFINED"
@@ -95,6 +101,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_EB8381CA8ED94C7FB8798B772F7691A2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C4B90BA4A280C467EF9D7EB2F9419BE6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -378,6 +390,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C4B90BA4A280C467EF9D7EB2F9419BE6"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.WinForms, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C4B90BA4A280C467EF9D7EB2F9419BE6"
+                    {
+                    "Name" = "8:FAndradeTI.Util.WinForms.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FAndradeTI.Util.WinForms.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0DC2751421FA4F0494443D82F5F22CD2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D11C90E5D7D9B409C808B49E46BDEF2F"
             {
             "AssemblyRegister" = "3:1"
@@ -444,7 +487,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Mp3FileHandler.BusinessRules, Version=1.20.22.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Mp3FileHandler.BusinessRules, Version=1.20.24.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_E54167813209E8003C2DC6C94CF2E581"
@@ -549,15 +592,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:NandoRunner Mp3 File Handler"
-        "ProductCode" = "8:{4F96FB9A-F296-4766-9626-5F7F1646EB18}"
-        "PackageCode" = "8:{26C67764-F4FA-4870-8A20-BEA69B64E0C7}"
+        "ProductCode" = "8:{66EFFBB9-905E-4649-BC95-534FB2F5D0F0}"
+        "PackageCode" = "8:{84F4ED63-B4B8-404B-BE74-1C6651E46CE6}"
         "UpgradeCode" = "8:{72EC32E2-2BDA-4D99-831E-A83760DC4D09}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.20.23"
+        "ProductVersion" = "8:1.20.25"
         "Manufacturer" = "8:FAndradeTI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

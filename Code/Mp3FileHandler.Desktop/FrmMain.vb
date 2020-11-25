@@ -370,19 +370,13 @@ Public Class FrmMain
             txtCaminho.Text = FS.GetFolder(txtCaminho.Text, "Selecione a pasta de músicas...")
         End While
 
-        jsonFile = FS.PathCombine(txtCaminho.Text, Application.ProductName + ".json")
-
-        mng = New FileRenamerManager(jsonFile)
-
         Dim ToolTip1 As New System.Windows.Forms.ToolTip()
         ToolTip1.SetToolTip(Me.btnAbrir, "Abrir pasta")
 
         Dim ToolTip2 As New System.Windows.Forms.ToolTip()
         ToolTip2.SetToolTip(Me.btnPesquisar, "Pesquisar pasta")
 
-        If Not FS.FileExists(jsonFile) Then Return
 
-        MontarGrid()
 
     End Sub
 
@@ -500,6 +494,8 @@ Public Class FrmMain
     Private Sub btnPesquisar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPesquisar.Click
 
         txtCaminho.Text = FS.GetFolder(txtCaminho.Text, "Selecione a pasta de músicas.")
+
+        FrmMain_Shown(sender, e)
 
         'FolderBrowserDialog1.SelectedPath = txtCaminho.Text
 
@@ -625,5 +621,20 @@ Public Class FrmMain
         End If
 
     End Sub
+
+    Private Sub FrmMain_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+
+        jsonFile = FS.PathCombine(txtCaminho.Text, Application.ProductName + ".json")
+
+        mng = New FileRenamerManager(jsonFile)
+
+        If Not String.IsNullOrEmpty(mng.Msg) Then
+            MsgBox(mng.Msg, MsgBoxStyle.Exclamation, Me.Text)
+            Return
+        End If
+
+        MontarGrid()
+    End Sub
+
 
 End Class

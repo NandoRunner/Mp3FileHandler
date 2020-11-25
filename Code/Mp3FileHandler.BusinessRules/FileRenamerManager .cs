@@ -12,21 +12,32 @@ namespace Mp3FileHandler.BusinessRules
     {
         private readonly string _json;
 
+        public string Msg { get; private set; }
+
         public List<Mp3FileInfo> ListCommand { get; set; }
 
         public FileRenamerManager(string json)
         {
-            _json = json;
+            Msg = string.Empty;
 
-            ListCommand = new List<Mp3FileInfo>();
-
-            if (!FS.FileExists(json))
+            try
             {
-                FS.CreateEmptyFile(json);
+                _json = json;
+
+                ListCommand = new List<Mp3FileInfo>();
+
+                if (!FS.FileExists(json))
+                {
+                    FS.CreateEmptyFile(json);
+                }
+                else
+                {
+                    ListCommand = LoadCommands();
+                }
             }
-            else
-            { 
-                ListCommand = LoadCommands();
+            catch (Exception ex)
+            {
+                Msg = ex.Message;
             }
         }
 
