@@ -317,9 +317,9 @@ Public Class FrmMain
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsLabel})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 574)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 576)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(860, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(863, 22)
         Me.StatusStrip1.TabIndex = 15
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -333,7 +333,7 @@ Public Class FrmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ClientSize = New System.Drawing.Size(860, 596)
+        Me.ClientSize = New System.Drawing.Size(863, 598)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnRenomearLote)
         Me.Controls.Add(Me.DataGridView1)
