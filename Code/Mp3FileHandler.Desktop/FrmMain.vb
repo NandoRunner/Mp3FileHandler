@@ -387,12 +387,12 @@ Public Class FrmMain
         If (Not FS.FolderExists(txtCaminho.Text)) Then
             MsgBox("Caminho não existe!", MsgBoxStyle.Exclamation, Me.Text)
             Cursor.Show()
-            pnMain.Enabled = True
+            HabilitarControles(True)
             ret = False
         ElseIf chkRemover.Checked And txtSubstituir.Text.Trim() = "" Then
             MsgBox("Texto a remover em branco!", MsgBoxStyle.Exclamation, Me.Text)
             Cursor.Show()
-            pnMain.Enabled = True
+            HabilitarControles(False)
             ret = False
         End If
 
@@ -400,11 +400,20 @@ Public Class FrmMain
 
     End Function
 
+    Private Sub HabilitarControles(habilitar As Boolean)
+        pnMain.Enabled = habilitar
+        btnRenomear.Enabled = habilitar
+        btnRenomearLote.Enabled = habilitar
+        btnTratarMusica.Enabled = habilitar
+
+    End Sub
+
     Private Sub btnRenomearLote_Click(sender As Object, e As EventArgs) Handles btnRenomearLote.Click
 
+        tsLabel.Text = "Processando... Aguarde!"
+        StatusStrip1.Update()
         Me.Cursor = Cursors.WaitCursor
-        pnMain.Enabled = False
-        tsLabel.Text = String.Empty
+        HabilitarControles(False)
 
         For Each row As DataGridViewRow In DataGridView1.Rows
 
@@ -420,7 +429,7 @@ Public Class FrmMain
 
         Next
 
-        pnMain.Enabled = True
+        HabilitarControles(True)
         Me.Cursor = Cursors.Default
         tsLabel.Text = " Processamento em lote finalizado!"
 
@@ -429,13 +438,17 @@ Public Class FrmMain
 
     Private Sub btnRenomear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRenomear.Click
 
+        tsLabel.Text = "Processando ..."
+        StatusStrip1.Update()
+
         Me.Cursor = Cursors.WaitCursor
-        pnMain.Enabled = False
+        HabilitarControles(False)
         tsLabel.Text = String.Empty
 
         If (Not VerificarCampos()) Then
             Me.Cursor = Cursors.Default
-            pnMain.Enabled = True
+            HabilitarControles(True)
+            tsLabel.Text = ""
             Exit Sub
         End If
 
@@ -456,7 +469,7 @@ Public Class FrmMain
         dados.Extensao = playlistExtension
         mng.ProcessPlaylist(txtCaminho.Text.Substring(0, 1) + playlistPath, dados)
 
-        pnMain.Enabled = True
+        HabilitarControles(True)
         Me.Cursor = Cursors.Default
         tsLabel.Text = processed & " arquivos renomeados!"
     End Sub
@@ -557,7 +570,7 @@ Public Class FrmMain
     Private Sub btnTratarMusica_Click(sender As Object, e As EventArgs) Handles btnTratarMusica.Click
 
         Me.Cursor = Cursors.WaitCursor
-        pnMain.Enabled = False
+        HabilitarControles(False)
 
         Dim caminho As String = txtCaminho.Text
 
@@ -573,7 +586,7 @@ Public Class FrmMain
 
         Dim processed As Integer = mt.TratarInfo(caminho)
 
-        pnMain.Enabled = True
+        HabilitarControles(True)
         Me.Cursor = Cursors.Default
 
         tsLabel.Text = processed & " músicas tratadas!"
