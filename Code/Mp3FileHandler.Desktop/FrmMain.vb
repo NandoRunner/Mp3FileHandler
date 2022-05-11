@@ -414,6 +414,7 @@ Public Class FrmMain
         StatusStrip1.Update()
         Me.Cursor = Cursors.WaitCursor
         HabilitarControles(False)
+        Dim total As Integer = 0
 
         For Each row As DataGridViewRow In DataGridView1.Rows
 
@@ -421,7 +422,8 @@ Public Class FrmMain
 
             Dim processed As Integer = mng.ProcessFile(dados)
 
-            If processed <> 0 Then tsLabel.Text += $"({row.Index}) como {processed} processados / "
+            total += processed
+            tsLabel.Text = $"{processed} processados na linha {row.Index + 1} / Total: {total}"
 
             dados.Extensao = playlistExtension
 
