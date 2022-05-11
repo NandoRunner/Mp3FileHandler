@@ -298,7 +298,7 @@ Public Class FrmMain
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.ShowEditingIcon = False
-        Me.DataGridView1.Size = New System.Drawing.Size(835, 228)
+        Me.DataGridView1.Size = New System.Drawing.Size(835, 354)
         Me.DataGridView1.TabIndex = 15
         '
         'btnRenomearLote
@@ -317,7 +317,7 @@ Public Class FrmMain
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsLabel})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 440)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 574)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(860, 22)
         Me.StatusStrip1.TabIndex = 15
@@ -326,14 +326,14 @@ Public Class FrmMain
         'tsLabel
         '
         Me.tsLabel.Name = "tsLabel"
-        Me.tsLabel.Size = New System.Drawing.Size(119, 17)
+        Me.tsLabel.Size = New System.Drawing.Size(133, 17)
         Me.tsLabel.Text = "ToolStripStatusLabel1"
         '
         'FrmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ClientSize = New System.Drawing.Size(860, 462)
+        Me.ClientSize = New System.Drawing.Size(860, 596)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnRenomearLote)
         Me.Controls.Add(Me.DataGridView1)
@@ -516,6 +516,8 @@ Public Class FrmMain
 
     Private Sub MontarGrid()
 
+        DataGridView1.DataSource = Nothing
+        DataGridView1.Rows.Clear()
         DataGridView1.DataSource = mng.ListCommand
 
         If mng.ListCommand Is Nothing Then

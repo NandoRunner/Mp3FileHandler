@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("VB.Net Mp3 File Manipulation Studies")>
 <Assembly: AssemblyCompany("FAndradeTI (NandoRunner)")>
 <Assembly: AssemblyProduct("Mp3FileHandler")>
-<Assembly: AssemblyCopyright("MIT License Copyright (c) 2016-2020 Fernando Andrade (NandoRunner)")>
+<Assembly: AssemblyCopyright("MIT License Copyright (c) 2016-2022 Fernando Andrade (NandoRunner)")>
 <Assembly: AssemblyTrademark("")> 
 <Assembly: CLSCompliant(True)> 
 
@@ -29,5 +29,5 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 
-<Assembly: AssemblyVersion("1.20.25")>
-<Assembly: AssemblyFileVersion("1.20.25")>
+<Assembly: AssemblyVersion("1.22.1")>
+<Assembly: AssemblyFileVersion("1.22.1")>

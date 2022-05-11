@@ -487,7 +487,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Mp3FileHandler.BusinessRules, Version=1.20.24.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Mp3FileHandler.BusinessRules, Version=1.22.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_E54167813209E8003C2DC6C94CF2E581"
@@ -592,15 +592,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:NandoRunner Mp3 File Handler"
-        "ProductCode" = "8:{66EFFBB9-905E-4649-BC95-534FB2F5D0F0}"
-        "PackageCode" = "8:{84F4ED63-B4B8-404B-BE74-1C6651E46CE6}"
+        "ProductCode" = "8:{5A2FCEE5-13E2-488E-9CCC-351F1C4653B9}"
+        "PackageCode" = "8:{3A211241-7E9D-4FAB-80EB-37CDE32BA689}"
         "UpgradeCode" = "8:{72EC32E2-2BDA-4D99-831E-A83760DC4D09}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.20.25"
+        "ProductVersion" = "8:1.22.1"
         "Manufacturer" = "8:FAndradeTI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
